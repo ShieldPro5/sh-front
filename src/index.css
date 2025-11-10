@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --theme-from: 59 130 246;
+  --theme-to: 6 182 212;
+}
+
+[data-theme="blue"] {
+  --theme-from: 59 130 246;
+  --theme-to: 6 182 212;
+}
+
+[data-theme="green"] {
+  --theme-from: 34 197 94;
+  --theme-to: 16 185 129;
+}
+
+[data-theme="purple"] {
+  --theme-from: 168 85 247;
+  --theme-to: 236 72 153;
+}
+
+[data-theme="orange"] {
+  --theme-from: 249 115 22;
+  --theme-to: 239 68 68;
+}
+
+.theme-gradient {
+  background: linear-gradient(135deg, rgb(var(--theme-from)), rgb(var(--theme-to)));
+}
+
+.theme-bg {
+  background: rgb(var(--theme-from));
+}
+
+.btn-theme {
+  background: linear-gradient(135deg, rgb(var(--theme-from)), rgb(var(--theme-to)));
+}
+
+.theme-ring {
+  --tw-ring-color: rgb(var(--theme-from));
+}
+
+.text-theme {
+  color: rgb(var(--theme-from));
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--theme-from) / 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgb(var(--theme-from) / 0.5);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--theme-from) / 0.7);
+}
+
+/* Global Styles with Montserrat */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
+               'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
+               'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Optional: Define font weights as CSS variables for consistency */
+:root {
+  --font-thin: 100;
+  --font-extralight: 200;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+}
+
+/* Utility classes for font weights */
+.font-thin { font-weight: var(--font-thin); }
+.font-extralight { font-weight: var(--font-extralight); }
+.font-light { font-weight: var(--font-light); }
+.font-normal { font-weight: var(--font-normal); }
+.font-medium { font-weight: var(--font-medium); }
+.font-semibold { font-weight: var(--font-semibold); }
+.font-bold { font-weight: var(--font-bold); }
+.font-extrabold { font-weight: var(--font-extrabold); }
+.font-black { font-weight: var(--font-black); }
