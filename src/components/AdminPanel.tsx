@@ -26,7 +26,9 @@ interface AdminPanelProps {
   onLogout: () => void;
 }
 
+//const API_BASE_URL = 'http://localhost:9000/api';
 const API_BASE_URL = 'https://sh-backend-nine.vercel.app/api'; 
+
 
 export default function AdminPanel({ onLogout }: AdminPanelProps) {
   const [complaints, setComplaints] = useState<Complaint[]>([]);
@@ -174,7 +176,7 @@ export default function AdminPanel({ onLogout }: AdminPanelProps) {
               </div>
               <div>
                 <h1 className="text-xl font-black bg-gradient-to-r from-cyan-600 to-indigo-600 bg-clip-text text-transparent">
-                  ScamShield Admin
+                  FundRecover Admin
                 </h1>
                 <p className="text-xs text-gray-600 font-medium">Fraud Management System</p>
               </div>
