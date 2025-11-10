@@ -12,7 +12,7 @@ interface Currency {
 }
 
 // API Base URL - Replace with your actual API endpoint
-const API_BASE_URL = 'http://localhost:9000/api';
+const API_BASE_URL = 'https://sh-backend-nine.vercel.app/api';
 
 export default function ReportPage({ onNavigate }: ReportPageProps) {
   const [formData, setFormData] = useState({
@@ -122,7 +122,7 @@ export default function ReportPage({ onNavigate }: ReportPageProps) {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
-      setTimeout(() => setSubmitStatus('idle'), 5000);
+      setTimeout(() => setSubmitStatus('idle'), 9000);
     }
   };
 
@@ -349,7 +349,7 @@ export default function ReportPage({ onNavigate }: ReportPageProps) {
               </button>
 
               {submitStatus === 'success' && (
-                <div className="mb-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-300/50 rounded-2xl p-5 flex items-start gap-4 shadow-lg shadow-green-500/10">
+                <div className="mb-8 bg-gradient-to-r from-green-50 mt-3 to-emerald-50 border-2 border-green-300/50 rounded-2xl p-5 flex items-start gap-4 shadow-lg shadow-green-500/10">
                   <div className="p-2 bg-green-500 rounded-xl">
                     <CheckCircle className="w-6 h-6 text-white" />
                   </div>
