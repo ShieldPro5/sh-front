@@ -179,7 +179,6 @@ export default function AdminPanel({ onLogout }: AdminPanelProps) {
                 <h1 className="text-xl font-black bg-gradient-to-r from-cyan-600 to-indigo-600 bg-clip-text text-transparent">
                   FundRecover Admin
                 </h1>
-                <p className="text-xs text-gray-600 font-medium">Fraud Management System</p>
               </div>
             </div>
 
