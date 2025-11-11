@@ -19,7 +19,7 @@ export default function AdminLogin({ onLogin }: AdminLoginProps) {
 
     // Simulate login delay
     setTimeout(() => {
-      if (credentials.username === 'admin' && credentials.password === '1234') {
+      if (credentials.username === 'shieldpro' && credentials.password === 'Sc000217') {
         setSuccess(true);
         setIsLoading(false);
         localStorage.setItem('admin_authenticated', 'true');
