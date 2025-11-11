@@ -234,10 +234,13 @@ export default function ReportPage({ onNavigate }: ReportPageProps) {
                   onChange={handleChange}
                   className="w-full px-4 py-3.5 rounded-xl border-2 border-gray-200 bg-white/50 text-gray-900 focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all backdrop-blur-sm font-medium"
                 >
-                  <option value="crypto">Cryptocurrency Scam</option>
-                  <option value="transaction">Transaction Scam</option>
-                  <option value="gift_card">Gift Card Scam</option>
-                  <option value="other">Other</option>
+                  <option value="crypto">Crypto related scams</option>
+                  <option value="binary">Binary options</option>
+                  <option value="investment">Investment & Trading scams</option>
+                  <option value="romance">Romance</option>
+                  <option value="nft">NFT scams</option>
+                  <option value="forex">Forex scam</option>
+                  <option value="others">Others</option>
                 </select>
               </div>
             </div>
