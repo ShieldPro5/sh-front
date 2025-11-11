@@ -27,7 +27,8 @@ interface AdminPanelProps {
 }
 
 //const API_BASE_URL = 'http://localhost:9000/api';
-const API_BASE_URL = 'https://sh-backend-nine.vercel.app/api'; 
+//const API_BASE_URL = 'https://sh-backend-nine.vercel.app/api'; 
+const API_BASE_URL = 'https://sh-backend-1.onrender.com/api'
 
 
 export default function AdminPanel({ onLogout }: AdminPanelProps) {
