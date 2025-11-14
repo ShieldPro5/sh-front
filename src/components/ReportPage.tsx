@@ -99,8 +99,8 @@ export default function ReportPage({ onNavigate }: ReportPageProps) {
         },
         body: JSON.stringify(formData),
       });
-
-      if (!response.ok) {
+console.log(response) 
+     if (!response.ok) {
         throw new Error('Failed to submit complaint');
       }
 
@@ -119,6 +119,8 @@ export default function ReportPage({ onNavigate }: ReportPageProps) {
       setFileName('');
     } catch (error) {
       console.error(error);
+            console.error(error);
+
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
