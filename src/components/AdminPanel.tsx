@@ -177,7 +177,7 @@ export default function AdminPanel({ onLogout }: AdminPanelProps) {
               </div>
               <div>
                 <h1 className="text-xl font-black bg-gradient-to-r from-cyan-600 to-indigo-600 bg-clip-text text-transparent">
-                  FundRecover Admin
+                  CoinMarketRecovery  Admin
                 </h1>
               </div>
             </div>

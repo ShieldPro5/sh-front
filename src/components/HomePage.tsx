@@ -47,7 +47,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 <Shield className="w-5 h-5 sm:w-7 sm:h-7 text-white" />
               </div>
               <h1 className="text-xl sm:text-2xl font-black bg-gradient-to-r from-cyan-600 to-indigo-600 bg-clip-text text-transparent">
-                FundRecover
+                CoinMarketRecovery 
               </h1>
             </div>
 
@@ -380,7 +380,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
       <footer className="bg-white/40 backdrop-blur-xl border-t border-white/50 mt-12 sm:mt-16 lg:mt-20 text-center py-6 sm:py-8">
         <p className="font-bold text-base sm:text-lg bg-gradient-to-r from-cyan-600 to-indigo-600 bg-clip-text text-transparent">
-          © 2025 FundRecover
+          © 2025 CoinMarketRecovery 
         </p>
         <p className="text-xs sm:text-sm text-gray-700 font-medium mt-1">
           Protecting communities from fraud.
